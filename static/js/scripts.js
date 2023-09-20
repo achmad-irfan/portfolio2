@@ -36,10 +36,19 @@
 //   });
 // });
 
-const toggle = document.getElementsByClassName("toggleMenu")[0];
-const sidebar = document.querySelector("nav.sidebar");
+const toggle = document.getElementsByClassName("toggleMenu")[0],
+  sidebar = document.querySelector(".sidebar"),
+  appTitle = document.querySelectorAll(".app-title");
 
 toggle.addEventListener("click", function () {
   sidebar.classList.toggle("slide");
   sidebar.style.transform = sidebar.classList.contains("slide") ? "translateX(0)" : "translateX(-400%)";
+  appTitle.classList.toggle("hidden");
+  appTitle.style.opacity = appTitle.classList.contains("hidden") ? "0" : "1";
 });
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   appTitle.forEach(function (e) {
+//     e.classList.add("animate__animated", "animate__fadeInDown", "animate__slow");
+//   });
+// });

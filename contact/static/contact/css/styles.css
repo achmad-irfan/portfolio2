@@ -1,6 +1,6 @@
 .contact {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.3fr 2fr;
   padding: 50px;
   gap: 30px;
   color: black;
@@ -20,37 +20,41 @@
 }
 
 .contactItem {
-  padding: 20px;
   display: grid;
   grid-template-areas:
     "icon item"
     "icon content";
-  grid-template-columns: 1fr 3fr;
-  justify-content: center;
+  grid-template-columns: 1fr 4fr;
+  justify-items: start;
+  align-items: center;
 }
 
 .contactItem i {
   grid-area: icon;
-  font-size: 5em;
+  font-size: 2.5em;
   color: blue;
 }
 
 .contactItem h3 {
+  place-self: center;
   grid-area: item;
-  font-size: 2em;
-  color: black;
+  font-size: 1.7em;
+  color: rgb(98, 0, 255);
 }
 
 .contactItem h4 {
   grid-area: content;
-  font-size: 1.2em;
+  place-self: center;
+  font-size: 1.4em;
   color: black;
 }
-
+.form-contact {
+  width: 100%;
+}
 .form-group {
   color: black;
   font-size: 2em;
-  max-width: 500px;
+  width: 100%;
 }
 
 .btn {
@@ -62,8 +66,7 @@
 
 @media screen and (max-width: 996px) {
   .contact {
-    padding: 20px 20px;
-    height: 75  vh;
+    padding: 20px 10px;
     gap: 20px;
   }
 
@@ -99,13 +102,22 @@
   .form-group {
     padding: 10px;
     font-size: 1em;
-    max-width: 200px;
   }
 
   .btn {
     margin-top: 10px;
     color: black;
     padding: 10px;
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 996px) {
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .contactItem h4 {
     font-size: 0.8em;
   }
 }

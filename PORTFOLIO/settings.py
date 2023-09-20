@@ -29,7 +29,7 @@ SECRET_KEY = "django-insecure-wy=1=*hfu$&hfib6zx8i*#yu7i01yj5%jybtj*_2h#z*xx750c
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
@@ -86,7 +86,7 @@ WSGI_APPLICATION = "PORTFOLIO.wsgi.application"
 DATABASES = {
     "default": {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'Portfolio',
+        'NAME': 'portfolio-coba',
         'USER': 'postgres',
         'PASSWORD': 'dave',
         'HOST': '127.0.0.1',

@@ -27,6 +27,7 @@ li {
 
 @media screen and (max-width: 996px) {
   .skills {
+    padding: 20px 0;
     gap: 13px;
   }
   img {
@@ -39,7 +40,7 @@ li {
   li {
     font-size: 1em;
     color: black;
-    padding: 5px 30px;
+    padding: 0 30px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgb(255, 255, 255);
   }

@@ -12,3 +12,7 @@ class ContactForm(forms.ModelForm):
     class Meta:
         model = ContactModel
         fields = '__all__'
+
+        widgets = {
+            'message': forms.Textarea(attrs={'rows': 4, 'cols': 15}),
+        }

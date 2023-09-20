@@ -175,7 +175,7 @@ ul.insight_items li {
 @media screen and (max-width: 996px) {
   .nav {
     gap: 10px;
-    padding: 5px;
+    padding: 0;
   }
 
   .nav-item a {
@@ -197,8 +197,8 @@ ul.insight_items li {
   }
 
   .report ol ul img {
-    width: 300px;
-    height: 150px;
+    width: 250px;
+    height: 125px;
     margin-bottom: 15px;
   }
 

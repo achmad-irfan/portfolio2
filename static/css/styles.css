@@ -201,4 +201,8 @@ div.icon {
     font-size: 1.8em;
     justify-content: space-evenly;
   }
+
+  .hidden {
+    opacity: 0;
+  }
 }
