@@ -29,7 +29,8 @@ SECRET_KEY = "django-insecure-wy=1=*hfu$&hfib6zx8i*#yu7i01yj5%jybtj*_2h#z*xx750c
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1', 'www.achmad-irfan.cloud/portfolio',
+                 'achmad-irfan.cloud/portfolio']
 
 
 # Application definition
@@ -86,9 +87,9 @@ WSGI_APPLICATION = "PORTFOLIO.wsgi.application"
 DATABASES = {
     "default": {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'portfolio-coba',
-        'USER': 'postgres',
-        'PASSWORD': 'dave',
+        'NAME': 'achmadi1_portfolio3',
+        'USER': 'achmadi1_irfan2',
+        'PASSWORD': 'Xc1y8UAUW.W!',
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
@@ -130,6 +131,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = "/static/"
+STATIC_ROOT = "/home/achmadi1/public_html/portfolio10"
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 
