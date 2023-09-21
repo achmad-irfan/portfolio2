@@ -10,8 +10,8 @@ class Proyek(models.Model):
         ('SQL', 'SQL'),
         ('Power BI', 'Power BI'),
         ('Tableau', 'Tableau'),
-        ('Dash', 'Dash'),
-        ('Django', 'Django'),
+        ('Python Dash', 'Python Dash'),
+        ('Python Django', 'Python Django'),
     ]
     nama = models.CharField(max_length=50)
     category = models.CharField(choices=ITEM_CHOICES)
