@@ -19,6 +19,12 @@ from django.urls import path, include, re_path
 from . import views
 from django.conf.urls.static import static
 from django.conf import settings
+from projects.views import ProyekViewSet
+from rest_framework import routers
+
+router = routers.DefaultRouter()
+router.register('proyek', ProyekViewSet)
+
 app_name = 'app_home'
 urlpatterns = [
     path('', views.index),
@@ -29,6 +35,8 @@ urlpatterns = [
     path('services/', include('services.urls')),
     path('contact/', include('contact.urls')),
     path("admin/", admin.site.urls),
+    path('API', include(router.urls)),
+    path('api-auth', include('rest_framework.urls', namespace='rest_framework')),
 ]
 
 if settings.DEBUG:

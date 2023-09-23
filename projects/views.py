@@ -3,6 +3,8 @@ from django.shortcuts import render, get_object_or_404
 from django.views.generic import ListView, DetailView
 # Create your views here.
 from .models import Proyek
+from .serializers import ProyekSerializer
+from rest_framework import viewsets
 
 
 class detailProjectView(DetailView):
@@ -66,3 +68,8 @@ def report_project(request, proyek_slug):
     }
 
     return render(request, 'projects/reportProject.html', context)
+
+
+class ProyekViewSet(viewsets.ModelViewSet):
+    queryset = Proyek.objects.all()
+    serializer_class = ProyekSerializer
