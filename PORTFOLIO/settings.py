@@ -91,7 +91,6 @@ DATABASES = {
         'NAME': 'achmadir_portfolio',
         'USER': 'achmadir_fan_afandi',
         'PASSWORD': 'k4@I-}g9ULpo',
-        'PASSWORD': 'DB_PASSWORD',
         'HOST': 'localhost',
         'PORT': '3306',
     }
