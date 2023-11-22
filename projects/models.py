@@ -15,10 +15,10 @@ class Proyek(models.Model):
     ]
     nama = models.CharField(max_length=50)
     category = models.CharField(choices=ITEM_CHOICES, max_length=55)
-    gambar = models.ImageField(upload_to='media', blank=True)
-    gambar2 = models.ImageField(upload_to='media', blank=True)
-    gambar3 = models.ImageField(upload_to='media', blank=True)
-    gambar4 = models.ImageField(upload_to='media', blank=True)
+    # gambar = models.ImageField(upload_to='media', blank=True)
+    # gambar2 = models.ImageField(upload_to='media', blank=True)
+    # gambar3 = models.ImageField(upload_to='media', blank=True)
+    # gambar4 = models.ImageField(upload_to='media', blank=True)
     tanggal = models.DateField(default=timezone.now)
     client = models.CharField(max_length=55)
     output = models.URLField(default='a')
@@ -70,7 +70,7 @@ class purpose(models.Model):
 class result(models.Model):
     namaProject = models.ManyToManyField(Proyek, related_name='results', )
     isi = models.TextField()
-    gambar = models.ImageField(blank=True)
+    # gambar = models.ImageField(blank=True)
     code = models.TextField(blank=True)
 
     def __str__(self):
