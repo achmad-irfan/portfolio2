@@ -1,4 +1,4 @@
-from django import forms
+# from django import forms
 
-class ProjectForm(forms.Form):
-    Menu = forms.CharField()
+# class ProjectForm(forms.Form):
+#     Menu = forms.CharField()

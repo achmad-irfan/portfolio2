@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .forms import ProjectForm
+# from .forms import ProjectForm
 from django.views import View
 
 
@@ -9,7 +9,7 @@ def index(request):
         'title': 'Achmad Irfan Afandi',
         'tile': 'Home',
         'subtitle': 'Data Analyst - Python Developer',
-        'projectForm': projectForm
+        # 'projectForm': projectForm
     }
 
     return render(request, 'index.html', context)
