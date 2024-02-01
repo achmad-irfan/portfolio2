@@ -4,7 +4,7 @@ from django.views import View
 
 
 def index(request):
-    projectForm = ProjectForm()
+    # projectForm = ProjectForm()
     context = {
         'title': 'Achmad Irfan Afandi',
         'tile': 'Home',
