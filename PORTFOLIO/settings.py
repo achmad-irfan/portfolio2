@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     # "rest_framework",
     "about",
     "education",
-    # "skill",
+    "skill",
     # "projects",
     # "services",
     # 'contact',

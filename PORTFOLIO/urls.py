@@ -30,7 +30,7 @@ urlpatterns = [
     path('', views.index),
     path('about/', include('about.urls')),
     path('education/', include('education.urls')),
-    # path('skill/', include('skill.urls')),
+    path('skill/', include('skill.urls')),
     # path('projects/', include('projects.urls')),
     # path('services/', include('services.urls')),
     # path('contact/', include('contact.urls')),
