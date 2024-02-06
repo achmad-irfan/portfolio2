@@ -29,7 +29,7 @@ app_name = 'app_home'
 urlpatterns = [
     path('', views.index),
     path('about/', include('about.urls')),
-    # path('education/', include('education.urls')),
+    path('education/', include('education.urls')),
     # path('skill/', include('skill.urls')),
     # path('projects/', include('projects.urls')),
     # path('services/', include('services.urls')),
