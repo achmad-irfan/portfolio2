@@ -47,8 +47,8 @@ INSTALLED_APPS = [
     "education",
     # "skill",
     # "projects",
-    # "services",
-    # 'contact',
+    "services",
+    'contact',
 ]
 
 MIDDLEWARE = [
