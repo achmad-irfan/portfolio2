@@ -48,7 +48,7 @@ INSTALLED_APPS = [
     # "skill",
     # "projects",
     "services",
-    'contact',
+    "contact",
 ]
 
 MIDDLEWARE = [
