@@ -36,7 +36,7 @@ header.logo {
   place-items: center;
 }
 span.name {
-  font-size: 1.3em;
+  font-size: 1.31em;
 }
 span.image img {
   height: 70px;
@@ -63,7 +63,7 @@ span.image img {
 }
 
 .icon-social i {
-  font-size: 30px;
+  font-size: 25px;
   box-shadow: 5px 5px 5px white;
 }
 
