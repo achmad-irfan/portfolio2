@@ -30,7 +30,7 @@ SECRET_KEY = "django-insecure-wy=1=*hfu$&hfib6zx8i*#yu7i01yj5%jybtj*_2h#z*xx750c
 DEBUG = True
 
 ALLOWED_HOSTS = ['www.achmad-irfan.cloud',
-                 'achmad-irfan.cloud', '127.0.0.1']
+                 'achmad-irfan.cloud']
 
 
 # Application definition
